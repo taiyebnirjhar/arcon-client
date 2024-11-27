@@ -1,7 +1,7 @@
 "use client";
 
 import { createContext, useContext } from "react";
-import useFullScreen from "./useFullScreen.hook";
+import useFullScreen from "../hooks/useFullScreen.hook";
 
 const HomeContext = createContext(undefined);
 
@@ -27,7 +27,7 @@ export default function HomeContextProvider({ children }: any) {
 export function useHomeContext() {
   const context = useContext(HomeContext);
   if (context === undefined) {
-    throw new Error("useHomeContext must be used within a PosContextProvider");
+    throw new Error("useHomeContext must be used within a ContextProvider");
   }
 
   return useContext(HomeContext);
