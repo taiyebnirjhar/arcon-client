@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Hero() {
@@ -16,16 +17,16 @@ export default function Hero() {
             “COLLABORATION
             <br />& TIMELESS DESIGNS”
           </h1>
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-4 font-libreFranklin">
             <Link
               href="#"
-              className="px-6 py-3 bg-[#FFE500] text-black font-medium hover:bg-yellow-300 transition-colors"
+              className="px-6 py-3 bg-[#FFE500]  text-black font-medium hover:bg-[#FFE500]/80 transition-colors"
             >
               Schedule a Meeting
             </Link>
             <Link
               href="#"
-              className="px-6 py-3 border border-white text-white font-medium hover:bg-white/10 transition-colors"
+              className="px-14 py-3 border border-white text-white font-medium hover:bg-white/10 transition-colors"
             >
               Contact Us
             </Link>
@@ -34,18 +35,17 @@ export default function Hero() {
       </div>
 
       {/* Geometric Shape Image */}
-      {/*
-      <div className="absolute top-0 right-0 w-1/2 h-full overflow-hidden">
+      <div className="w-full h-full flex justify-center">
         <Image
-          src="/placeholder.svg?height=1080&width=1920"
+          src="/assets/background-images/hero-bg.png"
           alt="Geometric Shape"
-          layout="fill"
+          className="w-full object-cover"
           objectFit="cover"
-          objectPosition="left"
-          className="opacity-90"
+          objectPosition="center"
+          width={1280}
+          height={500}
         />
       </div>
-      */}
     </div>
   );
 }
