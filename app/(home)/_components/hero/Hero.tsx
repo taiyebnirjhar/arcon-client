@@ -5,13 +5,16 @@ export default function Hero() {
     <div>
       {/* Hero Section */}
       <div className="relative container mx-auto px-4 pt-32 pb-16">
-        <div className="max-w-2xl text-white">
-          <p className="text-lg mb-4">
+        <div className="max-w-7xl text-white">
+          <p
+            className={`font-libreFranklin text-sm  tracking-[2.1px] font-normal mb-4`}
+          >
             Transforming visions into reality through
           </p>
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif mb-8 tracking-wide">
-            COLLABORATION
-            <br />& TIMELESS DESIGNS
+
+          <h1 className="font-bigilla  text-5xl md:text-6xl lg:text-8xl  mb-8 tracking-wide font-bold w-full">
+            “COLLABORATION
+            <br />& TIMELESS DESIGNS”
           </h1>
           <div className="flex flex-wrap gap-4">
             <Link

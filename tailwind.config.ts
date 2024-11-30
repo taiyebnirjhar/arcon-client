@@ -74,6 +74,9 @@ const config = {
       },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
+        bigilla: ["var(--font-bigilla)", ...fontFamily.sans],
+        libreFranklin: ["var(--font-libre-franklin)", ...fontFamily.sans],
+        roboto: ["var(--font-roboto)", ...fontFamily.sans],
       },
     },
   },
