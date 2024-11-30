@@ -17,44 +17,31 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-[#2A3121] via-[#677655] to-[#819766] relative overflow-hidden">
       <Navbar />
-
       {/* Hero Section */}
       <Hero />
-
       {/* Video Section */}
       <VideoPreview />
-
       {/* Services Section */}
       <Services />
-
       {/* About Section */}
       <About />
       {/* Our Work content */}
       <Works />
-
       {/* PROJECTS content */}
       <Projects />
-
       {/* Visit Our Office Section */}
       <VisitOurOffice />
-
       {/* Location Section */}
       <OfficeLocation />
-
       {/* partner section */}
       <Partner />
-
       {/* testimonial section */}
-
       <Testimonial />
-
       {/* Client Story Section */}
       <ClientStory />
-
       {/* contact form section */}
       <ContactForm />
       {/* END OF CONTACT FORM */}
-
       {/* Footer */}
       <Footer />
     </main>
