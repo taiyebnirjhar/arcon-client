@@ -1,4 +1,5 @@
-import { Phone } from "lucide-react";
+import WhatsAppButton from "@/components/shared/whatsapp-button/WhatsappButton";
+import { ChevronDown, MapPin } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -9,38 +10,36 @@ export function Navbar() {
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
             <Image
-              src="/placeholder.svg?height=40&width=40"
+              src="/assets/logo/ARCON-Interior-Logo-white.png"
               alt="Arcon Interior Logo"
               width={40}
               height={40}
-              className="h-10 w-10"
+              className="h-[70%] w-[70%] object-contain"
             />
-            <span className="text-white font-medium tracking-wide">
-              Arcon Interior
-            </span>
           </Link>
 
-          <div className="hidden md:flex items-center space-x-10">
+          <div className="hidden md:flex items-center space-x-10 font-libreFranklin">
             <Link
               href="#"
               className="text-white/90 hover:text-white text-sm tracking-wider"
             >
-              CHITTAGONG
+              <MapPin className="mr-0.5 -mt-1 w-5 h-5 inline-flex" /> CHITTAGONG
             </Link>
             <Link
               href="#"
               className="text-white/90 hover:text-white text-sm tracking-wider"
             >
-              DHAKA
+              <MapPin className="mr-0.5 -mt-1 w-5 h-5 inline-flex" /> DHAKA
             </Link>
             <Link
               href="#"
               className="text-white/90 hover:text-white text-sm tracking-wider"
             >
-              SERVICES
+              SERVICES{" "}
+              <ChevronDown className="ml-0.5 -mt-1 w-5 h-5 inline-flex" />
             </Link>
             <Link
-              href="#"
+              href="/projects"
               className="text-white/90 hover:text-white text-sm tracking-wider"
             >
               PROJECTS
@@ -65,12 +64,10 @@ export function Navbar() {
             </Link>
           </div>
 
-          <Link
-            href="#"
-            className="hidden md:flex items-center justify-center w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
-          >
-            <Phone className="w-5 h-5 text-white" />
-          </Link>
+          <div className="hidden md:flex items-center justify-center ">
+            <WhatsAppButton className="w-16 h-16 " iconSize={24} />
+            {/* <Phone className="w-5 h-5 text-white" /> */}
+          </div>
         </div>
       </div>
     </nav>

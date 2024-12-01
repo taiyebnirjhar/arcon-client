@@ -1,9 +1,10 @@
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Hero() {
+export default function Hero({ className }: { className?: string }) {
   return (
-    <div>
+    <div className={cn("", className)}>
       {/* Hero Section */}
       <div className="relative container mx-auto px-4 pt-32 pb-16">
         <div className="max-w-7xl text-white">
@@ -40,8 +41,6 @@ export default function Hero() {
           src="/assets/background-images/hero-bg.png"
           alt="Geometric Shape"
           className="w-full object-cover"
-          objectFit="cover"
-          objectPosition="center"
           width={1280}
           height={500}
         />
