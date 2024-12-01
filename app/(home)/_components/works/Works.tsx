@@ -42,7 +42,7 @@ const boldSubSentences = [
 
 export default function Works() {
   return (
-    <div className="w-full pb-32 text-[#353D2B]">
+    <div className="w-full  text-[#353D2B]">
       <div className="relative bg-[#FFD700] p-12">
         <div className="grid grid-cols-2 gap-20 divide-x-3 divide-dotted divide-black/20">
           {/* Left column - Title */}
