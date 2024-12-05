@@ -11,9 +11,9 @@ export function Navbar() {
             <Image
               src="/assets/logo/ARCON-Interior-Logo-white.png"
               alt="Arcon Interior Logo"
-              width={40}
-              height={40}
-              className="h-[70%] w-[70%] object-contain"
+              width={260}
+              height={260}
+              className="h-full w-32 object-contain"
             />
           </Link>
 
