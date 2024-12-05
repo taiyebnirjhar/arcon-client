@@ -1,25 +1,9 @@
+"use client";
+
 import PlayVideoButton from "@/components/shared/play-video-button/PlayVideoButton";
-import useDeviceSize from "@/hooks/use-device-size/useDeviceSize";
 import Image from "next/image";
 
 export default function VideoPreview() {
-  const deviceSize = useDeviceSize();
-  const getIconSize = () => {
-    switch (deviceSize) {
-      case "2xl":
-        return 32; // Larger icon for 2xl screens
-      case "xl":
-        return 32; // Medium-large icon for xl screens
-      case "lg":
-        return 24; // Medium icon for lg screens
-      case "md":
-        return 20; // Standard icon for md screens
-      case "sm":
-        return 18; // Smaller icon for sm screens
-      default:
-        return 16; // Smallest icon for xs screens
-    }
-  };
   return (
     <div className=" w-full bg-[#3D482E]">
       <VideoContainer />
@@ -37,10 +21,7 @@ export default function VideoPreview() {
             aria-label="Play video"
           >
             <div className=" flex items-center justify-center backdrop-blur-sm group-hover:scale-105 transition-transform">
-              <PlayVideoButton
-                iconSize={getIconSize()}
-                className="xl:w-[100px] xl:h-[100px] lg:w-[80px] lg:h-[80px] w-[60px] h-[60px]  text-[12px] "
-              />
+              <PlayVideoButton className="xl:w-[100px] xl:h-[100px] lg:w-[80px] lg:h-[80px] w-[60px] h-[60px]  text-[12px] " />
             </div>
           </button>
         </div>

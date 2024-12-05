@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useState } from "react";
 
 // Define the device size type
@@ -25,19 +27,28 @@ const getDeviceSize = (width: number): DeviceSize => {
 
 // Custom hook to track the device size
 const useDeviceSize = (): DeviceSize => {
-  const [deviceSize, setDeviceSize] = useState<DeviceSize>(
-    getDeviceSize(window.innerWidth)
-  );
+  const [deviceSize, setDeviceSize] = useState<DeviceSize>(() => {
+    // Ensure SSR-safe initialization
+    if (typeof window !== "undefined") {
+      return getDeviceSize(window.innerWidth);
+    }
+    return "xs"; // Default value for SSR
+  });
 
   useEffect(() => {
+    if (typeof window === "undefined") return; // Skip for SSR
+
     const handleResize = () => {
       setDeviceSize(getDeviceSize(window.innerWidth));
     };
 
+    // Add event listener to track resize
     window.addEventListener("resize", handleResize);
 
-    // Clean up event listener on unmount
-    return () => window.removeEventListener("resize", handleResize);
+    // Clean up the event listener on unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   return deviceSize;

@@ -12,25 +12,23 @@ import { Textarea } from "@/components/ui/textarea";
 
 export default function ContactForm() {
   return (
-    <div className="bg-[#F5F5F5] w-full">
-      <div className="max-w-3xl mx-auto px-4 py-16 bg-[#F5F5F5]">
+    <div className="bg-[#F5F5F5] w-full text-[#353D2B]">
+      <div className="max-w-[80%] mx-auto px-4 py-16 bg-[#F5F5F5]">
         <div className="text-center mb-8">
-          <h1 className="font-serif text-3xl mb-4 tracking-wide">
+          <h1 className="font-bigilla font-bold text-6xl mb-4 tracking-wide">
             CONTACT FORM
           </h1>
-          <p className="text-sm text-gray-600 max-w-2xl mx-auto">
+          <p className="text-sm opacity-90 max-w-2xl mx-auto font-libreFranklin">
             Ready to explore our Full or Virtual Interior Design Services?
             Connect with our team by completing the form below, and we&apos;ll
             guide you towards the best solution for your space.
           </p>
         </div>
 
-        <form className="space-y-8">
+        <form className="space-y-8 font-libreFranklin opacity-95">
           {/* THE ESSENTIALS */}
           <div className="space-y-4">
-            <h2 className="text-sm font-medium text-gray-700">
-              1. THE ESSENTIALS
-            </h2>
+            <h2 className=" font-medium">1. THE ESSENTIALS</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="space-y-2">
                 <Label htmlFor="name">Name</Label>
@@ -58,7 +56,7 @@ export default function ContactForm() {
 
           {/* YOUR HOME */}
           <div className="space-y-4">
-            <h2 className="text-sm font-medium text-gray-700">2. YOUR HOME</h2>
+            <h2 className=" font-medium ">2. YOUR HOME</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="space-y-2">
                 <Label htmlFor="location">Project Location (City)</Label>
@@ -75,9 +73,7 @@ export default function ContactForm() {
 
           {/* BUDGET & TIMELINE */}
           <div className="space-y-4">
-            <h2 className="text-sm font-medium text-gray-700">
-              3. BUDGET & TIMELINE
-            </h2>
+            <h2 className="font-medium ">3. BUDGET & TIMELINE</h2>
             <div className="space-y-4">
               <div className="space-y-2">
                 <Label htmlFor="budget">Construction Budget (Approx)</Label>
@@ -98,9 +94,7 @@ export default function ContactForm() {
 
           {/* PROJECT OBJECTIVES */}
           <div className="space-y-4">
-            <h2 className="text-sm font-medium text-gray-700">
-              4. PROJECT OBJECTIVES
-            </h2>
+            <h2 className=" font-medium ">4. PROJECT OBJECTIVES</h2>
             <div className="space-y-2">
               <Label htmlFor="objectives">
                 What is the main reason you would like to hire an interior

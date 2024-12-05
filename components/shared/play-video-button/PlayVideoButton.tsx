@@ -17,7 +17,7 @@ export default function PlayVideoButton({
           alt="Play Video"
           width={iconSize}
           height={iconSize}
-          className="text-white"
+          className="text-white xl:w-[32px] xl:h-[32px] lg:w-[24px] lg:h-[24px] md:w-[18px] md:h-[18px] w-[16px] h-[16px]"
         />
       </div>
       <svg

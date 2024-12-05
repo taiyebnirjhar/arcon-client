@@ -6,10 +6,10 @@ export default function Projects() {
   return (
     <div className="bg-white w-full font-libreFranklin">
       <div className="max-w-[1200px] mx-auto px-8 py-24">
-        <h1 className="text-center mb-16 text-[80px] leading-none font-bigilla font-bold">
+        <h1 className="text-center mb-16 text-[80px] leading-none font-bigilla font-bold text-[#353D2B]">
           PROJECTS
         </h1>
-        <div className="grid grid-cols-1 lg:grid-cols-[1.5fr,1fr] gap-8 font-libreFranklin">
+        <div className="grid grid-cols-1 lg:grid-cols-[1.5fr,1fr] gap-8 font-libreFranklin text-[#353D2B]">
           {/* White Castle Project */}
           <div className="relative group">
             <div className="absolute top-0 right-0 z-10">
@@ -87,7 +87,7 @@ export default function Projects() {
         <div className="text-center mt-16">
           <Button
             variant="outline"
-            className="bg-[#4A4F41] hover:bg-[#353D2B] text-white hover:text-white border-0 rounded-lg px-12 py-6 text-sm  transition-colors duration-300"
+            className="bg-[#4A4F41] hover:bg-[#353D2B] text-white hover:text-white border-0 rounded-none px-12 py-6 text-sm  transition-colors duration-300"
           >
             View All Projects
           </Button>
