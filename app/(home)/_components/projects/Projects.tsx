@@ -6,7 +6,7 @@ export default function Projects() {
   return (
     <div className="bg-white w-full font-libreFranklin">
       <div className="max-w-[1200px] mx-auto px-8 py-24">
-        <h1 className="text-center mb-16 text-[80px] leading-none font-serif">
+        <h1 className="text-center mb-16 text-[80px] leading-none font-bigilla font-bold">
           PROJECTS
         </h1>
         <div className="grid grid-cols-1 lg:grid-cols-[1.5fr,1fr] gap-8 font-libreFranklin">

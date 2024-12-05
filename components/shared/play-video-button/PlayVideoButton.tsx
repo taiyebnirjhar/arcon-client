@@ -10,7 +10,7 @@ export default function PlayVideoButton({
   iconSize = 32,
 }: PlayVideoButtonProps) {
   return (
-    <div className={cn("relative block w-[100px] h-[100px]", className)}>
+    <div className={cn("relative block ", className)}>
       <div className="absolute inset-0 bg-[#6F7F5C] hover:bg-[#6F7F5C]/80 rounded-full flex items-center justify-center">
         <Image
           src="/assets/icons/play.svg"
@@ -31,7 +31,7 @@ export default function PlayVideoButton({
             d="M 50,50 m -37,0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
           />
         </defs>
-        <text className="text-[12px] fill-white uppercase">
+        <text className=" fill-white uppercase">
           <textPath href="#circle" startOffset="0%">
             • Play Video • Play Video • Play Video •
           </textPath>

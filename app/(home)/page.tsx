@@ -20,6 +20,7 @@ export default function Home() {
     <main className="min-h-screen  bg-gradient-to-br from-[#2A3121] via-[#677655] to-[#819766] relative overflow-hidden">
       <Navbar />
       {/* Hero Section */}
+
       <Hero className="mt-8" />
       {/* Video Section */}
       <VideoPreview />
