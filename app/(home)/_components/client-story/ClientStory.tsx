@@ -1,10 +1,9 @@
 import { Button } from "@/components/ui/button";
-import { Play } from "lucide-react";
 import Image from "next/image";
 
 const videos = [
   {
-    thumbnail: "/placeholder.svg?height=400&width=600",
+    thumbnail: "/assets/images/yt-placeholder.png",
     title: "Hani's Residence",
     quote:
       "We chose Mirpur because of their Professionalism, Time commitment & Design",
@@ -12,7 +11,7 @@ const videos = [
     project: "White Castle Dhaka",
   },
   {
-    thumbnail: "/placeholder.svg?height=400&width=600",
+    thumbnail: "/assets/images/yt-placeholder.png",
     title: "Modern Interior",
     quote:
       "We chose Mirpur because of their Professionalism, Time commitment & Design",
@@ -20,7 +19,7 @@ const videos = [
     project: "White Castle Dhaka",
   },
   {
-    thumbnail: "/placeholder.svg?height=400&width=600",
+    thumbnail: "/assets/images/yt-placeholder.png",
     title: "Office Space",
     quote:
       "We chose Mirpur because of their Professionalism, Time commitment & Design",
@@ -29,7 +28,7 @@ const videos = [
   },
   // Duplicate entries for the second row
   {
-    thumbnail: "/placeholder.svg?height=400&width=600",
+    thumbnail: "/assets/images/yt-placeholder.png",
     title: "Hani's Residence",
     quote:
       "We chose Mirpur because of their Professionalism, Time commitment & Design",
@@ -37,7 +36,7 @@ const videos = [
     project: "White Castle Dhaka",
   },
   {
-    thumbnail: "/placeholder.svg?height=400&width=600",
+    thumbnail: "/assets/images/yt-placeholder.png",
     title: "Modern Interior",
     quote:
       "We chose Mirpur because of their Professionalism, Time commitment & Design",
@@ -45,7 +44,7 @@ const videos = [
     project: "White Castle Dhaka",
   },
   {
-    thumbnail: "/placeholder.svg?height=400&width=600",
+    thumbnail: "/assets/images/yt-placeholder.png",
     title: "Office Space",
     quote:
       "We chose Mirpur because of their Professionalism, Time commitment & Design",
@@ -72,13 +71,13 @@ export default function ClientStory() {
                   fill
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors">
+                {/* <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors">
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="w-12 h-12 rounded-full bg-red-600 flex items-center justify-center">
                       <Play className="w-6 h-6 text-white fill-current" />
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
 
               <div className="mt-4 text-white space-y-2">
