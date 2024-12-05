@@ -1,76 +1,105 @@
+import useDeviceSize from "@/hooks/use-device-size/useDeviceSize";
 import Image from "next/image";
 
 export default function About() {
+  const device = useDeviceSize();
+
   return (
     <div className="w-full">
-      <div className="bg-[#F5F5DC]  p-8 md:p-16">
-        <h2 className="text-4xl md:text-5xl font-serif text-[#2A3121] mb-8">
-          ABOUT ARCON
-        </h2>
-
-        <div className="flex justify-between">
-          <div className="space-y-6">
-            <p className="text-[#2A3121]">
-              Arcon Interior is a Top Ranked Interior & Exterior design firm in
+      <div className="bg-[#F5F5DC] ">
+        <div className="grid grid-cols-[1fr_auto] gap-16 text-[#353D2B] font-libreFranklin">
+          <div className="space-y-8 px-16 py-20">
+            <h2 className="2xl:text-8xl text-7xl font-bold font-bigilla text-[#353D2B] mb-12 lg:min-w-max">
+              ABOUT ARCON
+            </h2>
+            <p className="2xl:text-2xl text-xl opacity/90 font-light leading-relaxed max-w-3xl">
+              Arcon Interior is a Top-Ranked Interior & Exterior design firm in
               Bangladesh Established in 2012.
             </p>
 
-            <div>
-              <p className="text-[#2A3121] mb-2">
+            <div className="space-y-3  opacity/90 2xl:text-3xl text-2xl">
+              <p className=" font-light mb-2">
                 We work in areas as diverse as:
               </p>
-              <ul className="space-y-2 text-[#2A3121]">
-                <li>• Luxurious Duplex</li>
-                <li>• Modern Luxury Residential</li>
-                <li>• Corporate Office</li>
-                <li>• Healthcare</li>
-                <li>• Swimming Pool</li>
-                <li>• Furniture</li>
-                <li>• Landscape</li>
-                <li>• Exterior</li>
+              <ul className="space-y-2  font-light">
+                <li className="flex items-center gap-2">
+                  <span className=" leading-none">•</span>
+                  Luxurious Duplex
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className=" leading-none">•</span>
+                  Modern Luxury Residential
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className=" leading-none">•</span>
+                  Corporate Office
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className=" leading-none">•</span>
+                  Healthcare
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className=" leading-none">•</span>
+                  Swimming Pool
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className=" leading-none">•</span>
+                  Furniture
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className=" leading-none">•</span>
+                  Landscape
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="leading-none">•</span>
+                  Exterior
+                </li>
               </ul>
             </div>
           </div>
 
-          <div className="relative">
+          <div className="relative w-full h-full -mt-1 hidden lg:block">
             <Image
-              src="/placeholder.svg?height=400&width=400"
+              src="/assets/people-images/eng-osman-goni.svg"
               alt="Chief Engineer"
               width={400}
               height={400}
-              className="rounded-full"
+              className="object-cover  w-full   h-[90%]"
             />
+            <div className="text-center pt-8">
+              <h3 className="font-bold font-bigilla  2xl:text-6xl text-5xl  mb-1">
+                ENG. OSMAN GONI
+              </h3>
+              <p className="font-libreFranklin font-light tracking-wider 2xl:text-xl text-lg">
+                CHIEF ENGINEER
+              </p>
+            </div>
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 mt-16">
-          <div className="relative">
-            <div className="mt-4 text-center">
-              <h3 className="font-serif text-2xl text-[#2A3121]">
+        <div className="grid grid-cols-1 p-4 lg:p-0 lg:grid-cols-2 gap-16 2xl:-mt-80 xl:-mt-64 lg:-mt-10 text-[#353D2B] font-libreFranklin bg-[#F5F5DC]">
+          <div className=" hidden lg:block">
+            <div className="text-center pb-8">
+              <h3 className="font-bold font-bigilla text-6xl  mb-1">
                 ARIF MAHMUD
               </h3>
-              <p className="text-[#2A3121]">CHIEF ARCHITECT</p>
+              <p className="font-libreFranklin font-light tracking-wider text-xl">
+                CHIEF ARCHITECT
+              </p>
             </div>
-            <div className="relative">
+            <div className="relative w-full h-full bg-[#F5F5DC] ">
               <Image
-                src="/placeholder.svg?height=400&width=400"
-                alt="Chief Engineer"
+                src="/assets/people-images/arif-mahmud.svg"
+                alt="Chief Architect"
                 width={400}
                 height={400}
-                className="rounded-full"
+                className="object-cover  w-full h-[90%]"
               />
             </div>
           </div>
 
-          <div className="space-y-8 flex flex-col justify-center">
-            <div className="text-center md:text-right">
-              <h3 className="font-serif text-2xl text-[#2A3121] mb-2">
-                ENG. OSMAN GONI
-              </h3>
-              <p className="text-[#2A3121]">CHIEF ENGINEER</p>
-            </div>
-
-            <div className="space-y-6 text-[#2A3121]">
+          <div className="space-y-12 w-full h-full flex items-center justify-center lg:justify-end">
+            <div className="space-y-16  font-light leading-relaxed 2xl:text-3xl text-2xl">
               <p>
                 We like to keep our clients close so that we can accept their
                 social, economic and sustainability goals with all our hearts.

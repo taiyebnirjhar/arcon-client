@@ -2,61 +2,67 @@ import Image from "next/image";
 
 const services = [
   {
-    name: "2D/3D Modeling",
-    icon: "/placeholder.svg?height=64&width=64",
+    name: "2D/3D MODELING",
+    icon: "/assets/icons/modeling.svg",
   },
   {
-    name: "Corporate",
-    icon: "/placeholder.svg?height=64&width=64",
+    name: "CORPORATE",
+    icon: "/assets/icons/corporate.svg",
   },
   {
-    name: "Duplex",
-    icon: "/placeholder.svg?height=64&width=64",
+    name: "DUPLEX",
+    icon: "/assets/icons/duplex.svg",
   },
   {
-    name: "Exterior",
-    icon: "/placeholder.svg?height=64&width=64",
+    name: "EXTERIOR",
+    icon: "/assets/icons/exterior.svg",
   },
   {
-    name: "Furniture Design",
-    icon: "/placeholder.svg?height=64&width=64",
+    name: "FURNITURE DESIGN",
+    icon: "/assets/icons/furniture.svg",
   },
   {
-    name: "Home",
-    icon: "/placeholder.svg?height=64&width=64",
+    name: "HOME INTERIOR",
+    icon: "/assets/icons/interior.svg",
   },
   {
-    name: "Landscape",
-    icon: "/placeholder.svg?height=64&width=64",
+    name: "LANDSCAPE",
+    icon: "/assets/icons/landscape.svg",
   },
   {
-    name: "Restaurant",
-    icon: "/placeholder.svg?height=64&width=64",
+    name: "RESTAURANT",
+    icon: "/assets/icons/restaurant.svg",
   },
 ];
 
 export default function Services() {
   return (
-    <div className="container mx-auto px-4 pb-32">
-      <h2 className="text-4xl md:text-5xl font-serif text-white text-center mb-16">
-        AT YOUR SERVICE
-      </h2>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-        {services.map((service) => (
-          <div key={service.name} className="text-center">
-            <div className="w-16 h-16 mx-auto mb-4">
-              <Image
-                src={service.icon}
-                alt={service.name}
-                width={64}
-                height={64}
-              />
+    <div className="w-full bg-[#3D482E]">
+      <div className="container mx-auto px-4 py-24 bg-[#3D482E]">
+        <h2 className="text-4xl md:text-7xl font-bigilla font-bold text-white text-center mb-20">
+          AT YOUR SERVICE
+        </h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-16">
+          {services.map((service) => (
+            <div key={service.name} className="text-center group">
+              <div className="relative w-full aspect-[4/3] mb-6">
+                <div className="absolute inset-0 border border-white/20 rounded-sm group-hover:border-white/40 transition-colors" />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <Image
+                    src={service.icon}
+                    alt={service.name}
+                    width={64}
+                    height={64}
+                    className="w-24 h-24 text-white"
+                  />
+                </div>
+              </div>
+              <p className="text-white text-sm font-libreFranklin font-medium">
+                {service.name}
+              </p>
             </div>
-            <p className="text-white uppercase tracking-wide text-sm">
-              {service.name}
-            </p>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

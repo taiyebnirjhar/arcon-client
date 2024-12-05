@@ -1,4 +1,4 @@
-import { Phone } from "lucide-react";
+import { ChevronDown, MapPin } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -9,68 +9,64 @@ export function Navbar() {
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
             <Image
-              src="/placeholder.svg?height=40&width=40"
+              src="/assets/logo/ARCON-Interior-Logo-white.png"
               alt="Arcon Interior Logo"
               width={40}
               height={40}
-              className="h-10 w-10"
+              className="h-[70%] w-[70%] object-contain"
             />
-            <span className="text-white font-medium tracking-wide">
-              Arcon Interior
-            </span>
           </Link>
 
-          <div className="hidden md:flex items-center space-x-10">
+          <div className="hidden lg:flex items-center space-x-10 font-libreFranklin text-sm">
             <Link
               href="#"
-              className="text-white/90 hover:text-white text-sm tracking-wider"
+              className="text-white/90 hover:text-white tracking-wider min-w-max"
             >
-              CHITTAGONG
+              <MapPin className="mr-0.5 -mt-1 w-5 h-5 inline-flex" /> CHITTAGONG
             </Link>
             <Link
               href="#"
-              className="text-white/90 hover:text-white text-sm tracking-wider"
+              className="text-white/90 hover:text-white tracking-wider min-w-max"
             >
-              DHAKA
+              <MapPin className="mr-0.5 -mt-1 w-5 h-5 inline-flex" /> DHAKA
             </Link>
             <Link
               href="#"
-              className="text-white/90 hover:text-white text-sm tracking-wider"
+              className="text-white/90 hover:text-white tracking-wider min-w-max"
             >
-              SERVICES
+              SERVICES{" "}
+              <ChevronDown className="ml-0.5 -mt-1 w-5 h-5 inline-flex" />
             </Link>
             <Link
-              href="#"
-              className="text-white/90 hover:text-white text-sm tracking-wider"
+              href="/projects"
+              className="text-white/90 hover:text-white tracking-wider"
             >
               PROJECTS
             </Link>
             <Link
               href="#"
-              className="text-white/90 hover:text-white text-sm tracking-wider"
+              className="text-white/90 hover:text-white tracking-wider"
             >
               REVIEWS
             </Link>
             <Link
               href="#"
-              className="text-white/90 hover:text-white text-sm tracking-wider"
+              className="text-white/90 hover:text-white tracking-wider"
             >
               ABOUT
             </Link>
             <Link
               href="#"
-              className="text-white/90 hover:text-white text-sm tracking-wider"
+              className="text-white/90 hover:text-white tracking-wider"
             >
               CONTACTS
             </Link>
           </div>
 
-          <Link
-            href="#"
-            className="hidden md:flex items-center justify-center w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
-          >
-            <Phone className="w-5 h-5 text-white" />
-          </Link>
+          {/* <div className="hidden md:flex items-center justify-center ">
+            <WhatsAppButton className="w-16 h-16 " iconSize={24} />
+
+          </div> */}
         </div>
       </div>
     </nav>

@@ -1,13 +1,8 @@
+import { bigilla, fontSans, libreFranklin, roboto } from "@/fonts/fonts";
 import { cn } from "@/lib/utils";
 import { Providers } from "@/redux/provider";
 import type { Metadata } from "next";
-import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
-
-const fontSans = FontSans({
-  subsets: ["latin"],
-  variable: "--font-sans",
-});
 
 export const metadata: Metadata = {
   title: "Arcon",
@@ -24,7 +19,10 @@ export default function RootLayout({
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable
+          fontSans.variable,
+          libreFranklin.variable,
+          bigilla.variable,
+          roboto.variable
         )}
       >
         <Providers>{children}</Providers>

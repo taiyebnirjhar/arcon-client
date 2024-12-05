@@ -4,7 +4,13 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#6B7B67] text-white px-8 py-12 font-light">
+    <footer
+      className=" text-white px-8 py-12 font-light"
+      style={{
+        background:
+          "linear-gradient(120.93deg, #2A3121 -2.77%, #677655 26.58%, #819766 48.57%, #677655 74.9%, #2A3121 97%)",
+      }}
+    >
       <div className="max-w-6xl mx-auto">
         <div className="mb-12">
           <h2 className="text-2xl font-serif text-center tracking-wider mb-1">

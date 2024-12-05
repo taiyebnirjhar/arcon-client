@@ -1,7 +1,7 @@
 "use client";
 
 import { createContext, useContext } from "react";
-import useFullScreen from "../hooks/useFullScreen.hook";
+import useFullScreen from "../hooks/use-full-screen/useFullScreen.hook";
 
 const HomeContext = createContext(undefined);
 

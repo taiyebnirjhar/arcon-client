@@ -56,9 +56,9 @@ const videos = [
 
 export default function ClientStory() {
   return (
-    <div className="bg-[#4A4F41] py-20 px-4">
+    <div className="bg-[#596548] py-20 px-4">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-center font-serif text-3xl mb-16 tracking-wider text-white">
+        <h2 className="text-center font-bigilla font-bold text-6xl mb-16 tracking-wider text-white">
           CLIENT STORIES COME TO LIFE
         </h2>
 
@@ -82,11 +82,11 @@ export default function ClientStory() {
               </div>
 
               <div className="mt-4 text-white space-y-2">
-                <p className="text-sm italic opacity-90">
+                <p className="text-sm italic opacity-90 font-libreFranklin">
                   &quot;{video.quote}&quot;
                 </p>
-                <div className="text-xs opacity-80">
-                  <p>{video.location}</p>
+                <div className="text-xs opacity-80 font-libreFranklin ">
+                  <p className="font-semibold">{video.location}</p>
                   <p>{video.project}</p>
                 </div>
               </div>
