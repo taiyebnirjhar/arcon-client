@@ -4,10 +4,11 @@ import About from "./_components/about/About";
 import ClientStory from "./_components/client-story/ClientStory";
 import ContactForm from "./_components/contact-form/ContactForm";
 import Footer from "./_components/footer/Footer";
+import SubFooter from "./_components/footer/SubFooter";
 import Hero from "./_components/hero/Hero";
 import { Navbar } from "./_components/navbar/navbar";
 import OfficeLocation from "./_components/office-location/OfficeLocation";
-import Partner from "./_components/partner/Partner";
+import { PartnerV1 } from "./_components/partner/Partner";
 import Projects from "./_components/projects/Projects";
 import Services from "./_components/services/Services";
 import Testimonial from "./_components/testimonial/Testimonial";
@@ -37,14 +38,16 @@ export default function Home() {
       {/* Location Section */}
       <OfficeLocation />
       {/* partner section */}
-      <Partner />
+
+      <PartnerV1 />
       {/* testimonial section */}
       <Testimonial />
       {/* Client Story Section */}
       <ClientStory />
       {/* contact form section */}
       <ContactForm />
-      {/* END OF CONTACT FORM */}
+      {/* Sub Footer */}
+      <SubFooter />
       {/* Footer */}
       <Footer />
       <FloatingWhatsAppButton />
